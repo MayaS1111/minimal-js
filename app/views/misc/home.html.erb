@@ -9,9 +9,70 @@
   <li id="sfo" class="west">San Francisco</li>
 </ul>
 
-<script>
-  // Write your JS here.
-  // Open the JS console and refresh the page to see the output.
 
+<div id="bye">Click me</div>
+
+<script>
+  // for (let i=1; i<=100; i++){
+  //   if (i%3 === 0 && i%5 === 0){
+  //     console.log('fizzbuzz');
+  //   } else if (i%3 === 0){
+  //     console.log('fizz');
+  //   } else if (i%5 === 0){
+  //     console.log('buzz');
+  //   } else
+  //   console.log(i);
+  // }
+
+  let items = document.getElementsByTagName("li")
+  items
+
+  let chi = document.getElementById("ord");
+  chi.innerText;
+
+  list = document.getElementById("cities_list");
+  list.append(chi);
   
+  eastItems = document.getElementsByClassName("east");
+  for (let i = 0; i < eastItems.length; i++) {
+    eastItems[i].style.border = "thin red solid";
+  }
+
+  let den = document.createElement("li")
+  let den_text = document.createTextNode("Denver")
+  den.append(den_text)
+  den.style.backgroundColor = "orange"
+  den.className = "west"
+  den.id = "den"
+  list.prepend(den)
+  
+  // $("li");
+  // $(".west");
+  // $("#best");
+
+  let ch = $("#ord");
+  ch.text();
+  ch.css("background-color", "green");
+  
+  ch.hide();
+
+ch.fadeIn();
+
+ch.fadeOut();
+
+
+ch.fadeToggle(5000, function() {
+  this.remove();
+});
+
+  list = $("#cities_list");
+  list.append(chi);
+  $(".east").css("border", "thin blue solid");
+
+$("body").on("click", "#bye", function() {
+  $(".west").slideToggle();
+});
+
+
+  console.log('Done');
 </script>
